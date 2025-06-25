@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Is Broomster’s Car Here Yet</title>
   <style>
     *, *::before, *::after {
@@ -10,29 +10,36 @@
     }
     html, body {
       height: 100%;
+      font-family: Arial, sans-serif;
     }
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
       background: url('background.jpg') no-repeat center/cover;
       color: white;
-      font-family: sans-serif;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      padding: 1rem;
     }
     h1 {
       font-size: 15vw;
-      text-align: center;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .subhead {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .status {
+      font-size: 1rem;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
   <h1>NO</h1>
-  <br>
-Dealer has received the order
-  <br> 
-  Current status - on order.  Expected January 2026
-  <br>
-
+  <div class="subhead">Dealer has received the order</div>
+  <div class="status">Current status – on order. Expected January 2026</div>
 </body>
 </html>
